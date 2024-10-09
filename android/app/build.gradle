@@ -108,6 +108,11 @@ android {
 }
 
 dependencies {
+    //Vector icons
+    apply from: file("../../node_modules/react-native-vector-icons/fonts.gradle")
+    // En Android android/app/build.gradle
+    implementation 'androidx.appcompat:appcompat:1.1.0-rc01'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02'
     // The version of react-native is set by the React Native Gradle Plugin
     implementation("com.facebook.react:react-android")
 
